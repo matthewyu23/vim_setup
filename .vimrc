@@ -1,0 +1,26 @@
+set autoindent "New lines inherit the indentation of previous lines
+set expandtab "Convert tabs to spaces
+set smarttab "Insert “tabstop” number of spaces when the “tab” key is pressed.
+set tabstop=4 "Indent using four spaces.
+
+set hlsearch "Enable search highlighting.
+set ignorecase "Ignore case when searching.
+set incsearch "Incremental search that shows partial matches.
+set smartcase "Automatically switch search to case-sensitive when search query contains an uppercase letter.
+
+syntax enable "Enable syntax highlighting.
+set number "Show line numbers on the sidebar.
+set relativenumber "Show line number on the current line and relative numbers on all other lines
+colorscheme distinguished 
+
+set splitbelow splitright
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+
+
+
+
