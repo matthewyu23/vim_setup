@@ -11,7 +11,8 @@ set smartcase "Automatically switch search to case-sensitive when search query c
 syntax enable "Enable syntax highlighting.
 set number "Show line numbers on the sidebar.
 set relativenumber "Show line number on the current line and relative numbers on all other lines
-colorscheme distinguished 
+set background=dark
+set spell
 
 set splitbelow splitright
 
@@ -20,7 +21,12 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+call plug#begin('~/.vim')
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'morhetz/gruvbox'
+call plug#end()
 
 
-
-
+colorscheme gruvbox
