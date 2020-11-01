@@ -13,7 +13,7 @@ set number "Show line numbers on the sidebar.
 set relativenumber "Show line number on the current line and relative numbers on all other lines
 set background=dark
 set spell
-
+set showcmd
 set splitbelow splitright
 
 map <C-h> <C-w>h
@@ -26,7 +26,9 @@ Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 
 colorscheme gruvbox
+inoremap <expr> <Tab> pumvisible() ? "\<C-n><Space>" : "<Tab>" "use tab to select first coc popup
